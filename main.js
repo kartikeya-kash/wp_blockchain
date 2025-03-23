@@ -1,5 +1,4 @@
-import SHA256 from 'crypto-js/sha256'; 
-//import the lib
+const SHA256 = require('crypto-js/sha256');//import the lib
 class Block{
     constructor(index , timestamp , data , previousHash = ''){
         this.index=index;
@@ -29,7 +28,7 @@ return this.chain[this.chain.length-1];
 
     addBlock(newBlock){ // to add a block to chain
     newBlock.previousHash = this.getLatestBlock().hash;
-    newBlock.hash=this.calculateHash();
+    newBlock.hash=newBlock.calculateHash();
     this.chain.push(newBlock);
     }
 }
