@@ -52,5 +52,11 @@ isChainValid(){
 let kcoin = new blockChain();
 kcoin.addBlock(new Block(1, '1/02/2000', { amount: 4 }));
 kcoin.addBlock(new Block(2, '3/02/2000', { amount: 20 }));
+console.log("is chain valid ? " + kcoin.isChainValid());
+
+kcoin.chain[1].data = {amount:100};
+kcoin.chain[1].hash = kcoin.chain[1].calculateHash(); 
+
+console.log("is chain valid ? " + kcoin.isChainValid());
 
 console.log(JSON.stringify(kcoin,null,4));
