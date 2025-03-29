@@ -90,8 +90,10 @@ transition: .5s;
 
 .wrapper{
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 90%; /* Changed from fixed 400px to percentage */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Changed from fixed height */
+    min-height: 440px; /* Minimum height */
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -102,21 +104,21 @@ transition: .5s;
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform 0.5s ease ,height .2s ease;
+    transition: transform 0.5s ease, height .2s ease;
+    padding: 20px; /* Added padding */
 }
 
 .wrapper.active-popup{
-    transform: scale(0);
+    transform: scale(1);
 }
-
 .wrapper.active{
     height: 520px;
 
 }
 
-.wrapper .form-box{
+.wrapper .form-box {
     width: 100%;
-    padding: 40px;
+    padding: 40px; 
 }
 
 .wrapper .form-box.login{
