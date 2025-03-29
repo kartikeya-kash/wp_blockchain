@@ -166,3 +166,8 @@ padding: 0 35px 0 5px;
     display: flex;
     justify-content: space-between;
 }
+
+.remember-forgot label input{
+    accent-color: #333333;
+    margin-right: 3px;
+}
