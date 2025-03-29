@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('') no-repeat; 
+    background: url('bg3.jpg') no-repeat; 
     background-size: cover;
     background-position: center;
 }
@@ -113,6 +113,8 @@ transition: .5s;
 
 }
 
+
+
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
@@ -121,11 +123,11 @@ transition: .5s;
 .wrapper .form-box.login{
     transition: transform .18s ease;
     transform: translateX(0);
-    
 }
 
 .wrapper.active .form-box.login{
 transition: none;
+
 transform: translateX(-400px);
 }
 
