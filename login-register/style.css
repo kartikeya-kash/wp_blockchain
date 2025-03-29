@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('bg6.jpg') no-repeat; 
+    background: url('') no-repeat; 
     background-size: cover;
     background-position: center;
 }
@@ -25,6 +25,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,12 +100,21 @@ transition: .5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
+}
+
+.wrapper .form-box.login{
+    /*display: none;*/
+}
+
+.wrapper .form-box.register{
+    position: relative;
+    transform: translateX(400px);
 }
 
 .wrapper .icon-close{
