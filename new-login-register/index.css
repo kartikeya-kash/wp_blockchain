@@ -59,7 +59,8 @@ body{
     transform: translateY(0);
     opacity: 1;
 }
-.search-bar{
+
+/*.search-bar{
     width: 250px;
     height: 45px;
     background-color: transparent;
@@ -91,6 +92,20 @@ body{
 }
 .search-bar button i{
     font-size: 22px;
+}*/
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-radius: 30px;
+}
+
+.header-logo {
+    height: 100%;
+    width: auto;
+    border-radius: 30px;
+    object-fit: contain;
 }
 .container{
     position: absolute;
