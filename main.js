@@ -1,6 +1,6 @@
 const SHA256 = require('crypto-js/sha256');//import the lib
 class Block{
-    constructor(index , timestamp , data , previousHash = ''){ // what will the parameter to calclate the hash
+    constructor(index , timestamp , data , previousHash = ''){ // what will the parameter to calculate the hash
         this.index=index;
         this.timestamp=timestamp;
         this.data=data;
@@ -15,6 +15,7 @@ class Block{
 
     mineBlock(difficulty){  // act as a proof of work which require lot of hash power (in simple terms electricity 
         // to calculate the hash) to avoid spamming of block in the chain and to avoid security risks in the blockchain
+
     while(this.hash.substring(0,difficulty) != Array(difficulty+1).join("0")){
     this.nonce++;
     console.log(this.hash);
@@ -30,7 +31,7 @@ class blockChain{
 
     constructor(){
         this.chain = [this.createGenesisBlock()]; // array of block
-        this.difficulty = 10; 
+        this.difficulty = 6; 
     }
 
     createGenesisBlock(){
@@ -46,6 +47,7 @@ return this.chain[this.chain.length-1];
     newBlock.mineBlock(this.difficulty); // pass difficulty
     this.chain.push(newBlock);
     }
+
 isChainValid(){
     for(let i =1 ; i<this.chain.length;i++){
         const currentBlock = this.chain[i];
@@ -64,10 +66,12 @@ isChainValid(){
     
 }
 
-let kcoin = new blockChain();
-console.log("mining block 1 ... ");
+let kcoin = new blockChain(); // new coin called kcoin
+
+//testing code for mining blocks
+/* console.log("mining block 1 ... ");
 kcoin.addBlock(new Block(1, '1/02/2000', { amount: 4 }));
 
 console.log("mining block 2 ... ");
 kcoin.addBlock(new Block(2, '3/02/2000', { amount: 20 }));
-console.log(JSON.stringify(kcoin,null,4));
+console.log(JSON.stringify(kcoin,null,4)); */
