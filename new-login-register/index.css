@@ -1,3 +1,5 @@
+/*text -> #D1D5DB  bg -> #2f333e*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 *{
     margin: 0;
@@ -12,7 +14,7 @@ body{
   
 }
 .background{
-    background: url(bg3.jpg) no-repeat; /*change*/
+    background:#2f333e;/*url(/login-register/bg4.jpg) no-repeat; change*/
     background-position: center;
     background-size:cover ;
     height: 100vh;
@@ -36,7 +38,7 @@ body{
 .navbar a{
     position: relative;
     font-size: 16px;
-    color: #333333;
+    color: #D1D5DB;
     margin-right: 30px;
     text-decoration: none;
 }
@@ -46,7 +48,7 @@ body{
     left: 0;
     width: 100%;
     height: 2px;
-    background: #333333;
+    background: #D1D5DB;
     bottom: -5px;
     border-radius: 5px;
     transform: translateY(10px);
@@ -61,7 +63,7 @@ body{
     width: 250px;
     height: 45px;
     background-color: transparent;
-    border: 2px solid #333333;
+    border: 2px solid #D1D5DB;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -71,7 +73,7 @@ body{
     background-color: transparent;
     border: none;
     outline: none;
-    color: #333333;
+    color: #D1D5DB;
     font-size: 16px;
     padding-left: 10px;
 }
@@ -81,11 +83,11 @@ body{
     background: transparent;
     outline: none;
     border: none;
-    color: #333333;
+    color: #D1D5DB;
     cursor: pointer;
 }
 .search-bar input::placeholder{
-    color: #333333;
+    color: #D1D5DB;
 }
 .search-bar button i{
     font-size: 22px;
@@ -98,7 +100,7 @@ body{
     width: 75%;
     height: 550px;
     margin-top: 20px;
-    background: url(bg3.jpg) no-repeat; /*change*/
+    background: url(bg.jpg) no-repeat; /*change*/
     background-position: center;
     background-size:cover ;
     border-radius: 20px;
@@ -112,7 +114,7 @@ body{
     left: 0;
     width: 58%;
     height: 100%;
-    color: #333333;
+    color: #D1D5DB;
     background: transparent;
     padding: 80px;
     display: flex;
@@ -123,7 +125,7 @@ body{
 
 }
 .item .logo{
-    color: #333333;
+    color: #D1D5DB;
     font-size: 30px;
 
 }
@@ -136,7 +138,7 @@ body{
     margin: 20px 0;
 }
 .social-icon a i{
-    color: #333333;
+    color: #D1D5DB;
     font-size: 24px;
     margin-left: 10px;
     cursor: pointer;
@@ -151,7 +153,7 @@ body{
     right: 0;
     width: calc(100% - 58%);
     height: 100%;
-    color: #333333;
+    color: #D1D5DB;
     backdrop-filter: blur(10px);
 }
 
@@ -194,7 +196,7 @@ body{
 .form-box .input-box{
     width: 340px;
     height: 50px;
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #D1D5DB;
     margin: 30px 0;
     position: relative;
 }
@@ -238,28 +240,28 @@ body{
     justify-content: space-between;
 }
 .remember-password label input{
-    accent-color: #333333;
+    accent-color: #D1D5DB;
     margin-right: 3px;
 
 }
 .remember-password a{
-    color: #333333;
+    color: #D1D5DB;
     text-decoration: none;
 }
 .remember-password a:hover{
     text-decoration: underline;
 }
 .btn{
-    background: #333333;
+    background: #000000;
     width: 100%;
     height: 45px;
     outline: none;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background: #333333;
+    background: #D1D5DB;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     box-shadow: rgba(0,0,0,0.4);
 
 }
@@ -269,7 +271,7 @@ body{
     margin: 25px;
 }
 .create-account p a{
-    color: #333333;
+    color: #D1D5DB;
     font-weight: 600px;
     text-decoration: none;
 }
