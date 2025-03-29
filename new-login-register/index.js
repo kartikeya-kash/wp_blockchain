@@ -16,6 +16,7 @@ function register(){
     
 }
 
+//get values from login
 function login(){
     let login_email = document.getElementById('login-email').value;
     let login_password = document.getElementById('login-password').value; 
