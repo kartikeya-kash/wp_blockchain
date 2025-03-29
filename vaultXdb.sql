@@ -8,3 +8,5 @@ password varchar(200) not null
 );
 
 select * from userinfo;
+
+insert into userinfo value ('kartikeya','kartikeya.anjul@gmail.com','password');
