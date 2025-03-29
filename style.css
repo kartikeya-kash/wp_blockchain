@@ -7,6 +7,10 @@ box-sizing: border-box;
 font-family: 'Poppins',sans-serif;
 }
 
+body{
+    
+}
+
 header{
     position: fixed;
     top: 0;
@@ -44,6 +48,14 @@ header{
     height: 3px;
     background: #fff;
     border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 
