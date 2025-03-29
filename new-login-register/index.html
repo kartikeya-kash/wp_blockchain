@@ -6,20 +6,24 @@
     
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- Navbar start-->
    <header class="header">
     <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Help</a>
+        <a href="index.html">Home</a> <!--Links-->
+        <a href="#">Services</a>  <!--Links-->
+          <a href="#">About</a>  <!--Links-->
+          <a href="#">Contact</a> <!--Links-->
+          <a href="#">Help</a> <!--Links-->
     </nav>
+    <!--Logo start-->
     <div class="logo-container">
         <img src="vx_logo.jpg" alt="VaultX Logo" class="header-logo">
      </div>
-    
+      <!--Logo end-->
    </header>
+    <!-- Navbar end-->
+
+
     <!-- LOGIN FORM -->
     <div class="background"></div>
     <div class="container">
@@ -45,19 +49,19 @@
                     <h2>Sign In</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
+                        <input id="login-email" type="email" required> <!--input-->
                         <label>Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
+                        <input id="login-password" type="password" required><!--input-->
                         <label>Password</label>
                     </div>
                     <div class="remember-password">
                         <label for=""><input type="checkbox">Remember Me</label>
                         <a href="#">Forget Password</a>
                     </div>
-                    <button class="btn">Login In</button>
+                    <button class="btn" onclick="login()">Sign In</button>
                     <div class="create-account">
                         <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
                     </div>
@@ -70,23 +74,23 @@
 
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user'></i></span>
-                        <input type="text" required>
+                        <input id="register-username" type="text" required ><!--input-->
                         <label >Username</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
+                        <input id="register-email" type="email" required ><!--input-->
                         <label >Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
+                        <input id="register-password" type="password" required><!--input-->
                         <label>Password</label>
                     </div>
                     <div class="remember-password">
                         <label for=""><input type="checkbox">I agree with this statment</label>
                     </div>
-                    <button class="btn">Login In</button>
+                    <button class="btn"  onclick="register()">Sign Up</button>
                     <div class="create-account">
                         <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
                     </div>
@@ -94,8 +98,6 @@
             </div>
         </div>
     </div>
-     <!-- SIGN UP FORM CREATION -->
-
     <script src="index.js"></script>
 </body>
 
