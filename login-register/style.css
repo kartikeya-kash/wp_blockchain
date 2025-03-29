@@ -7,8 +7,16 @@ box-sizing: border-box;
 font-family: 'Poppins',sans-serif;
 }
 
+
+
 body{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg3.jpg') no-repeat; 
+    background-size: cover;
+    background-position: center;
 }
 
 header{
@@ -17,7 +25,6 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,14 +33,14 @@ header{
 
 .logo{
     font-size: 2em;
-    color: #fff;
+    color: #333333;
     user-select: none;
 }
 
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: #333333;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -46,7 +53,7 @@ header{
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #333333;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -63,19 +70,19 @@ header{
 width: 130px;
 height: 50px;
 background: transparent;
-border: 3px solid #fff;
+border: 3px solid #333333;
 outline: none;
 border-radius: 6px;
 cursor: pointer;
 font-size: 1.1em;
-color: #fff;
+color: #333333;
 font-weight: 500;
 margin-left: 40px;
 transition: .5s;
 }
 
 .navigation .btn-Login-popup:hover{
-    background: #fff;
-    color: #162938;
+    background: #333333;
+    color: #fff;
 
 }
